@@ -1,5 +1,13 @@
 import { useState } from 'react';
-
+/**
+ * rest api   json-server npm으로 설치후 서버열어서 내가 저장해놓은 json 데이터파일을 port 번호와 함꼐 실행 3001로 실행함함
+ *                      json-server --watch src/db/data.json --port 3001
+ * create: post
+ * read: get
+ * update: put
+ * delete: delete
+ * 
+ */
 export default function Word({ word }) {
     function toggle() {
         setIsshow(!isShow);//현재 isshow의 반대값으로 설정
@@ -34,12 +42,3 @@ export default function Word({ word }) {
     );
 }
 
-/**
- * rest api
- * 
- * create: post
- * read: get
- * update: put
- * delete: delete
- * 
- */
